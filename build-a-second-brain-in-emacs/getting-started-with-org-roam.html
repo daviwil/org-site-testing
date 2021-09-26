@@ -16,20 +16,20 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb2beb9f">What is Org Roam?</a></li>
-<li><a href="#org8ebf7c4">Prerequisites</a></li>
-<li><a href="#orge917075">Installation</a></li>
-<li><a href="#org3589bd2">Basic configuration</a></li>
-<li><a href="#org77c1c60">Dealing with migration warnings</a></li>
-<li><a href="#org6709194">Creating your first node</a></li>
-<li><a href="#orgf8dbdd4">They're just .org files!</a></li>
-<li><a href="#org762e16a">Inserting links to other nodes</a></li>
-<li><a href="#org8d0e43e">Inserting links to nodes that don't exist yet</a></li>
-<li><a href="#org355a4d6">Inserting node links using completions</a></li>
-<li><a href="#org8c1afaf">Creating a heading node</a></li>
-<li><a href="#orga8f240c">Creating aliases for nodes</a></li>
-<li><a href="#org7ebd6b9">Viewing backlinks for the current file</a></li>
-<li><a href="#org2adcf3b">What's next?</a></li>
+<li><a href="#org76d7712">What is Org Roam?</a></li>
+<li><a href="#org30f9cf6">Prerequisites</a></li>
+<li><a href="#orgf3c32d9">Installation</a></li>
+<li><a href="#org0be695f">Basic configuration</a></li>
+<li><a href="#org0ef80b9">Dealing with migration warnings</a></li>
+<li><a href="#org1a7878f">Creating your first node</a></li>
+<li><a href="#orgd10c642">They're just .org files!</a></li>
+<li><a href="#org2b731a3">Inserting links to other nodes</a></li>
+<li><a href="#orgc0c3461">Inserting links to nodes that don't exist yet</a></li>
+<li><a href="#org9de544e">Inserting node links using completions</a></li>
+<li><a href="#org9a2d195">Creating a heading node</a></li>
+<li><a href="#orgb77a183">Creating aliases for nodes</a></li>
+<li><a href="#org35594fb">Viewing backlinks for the current file</a></li>
+<li><a href="#orgb1bf786">What's next?</a></li>
 </ul>
 </div>
 </div>
@@ -37,9 +37,9 @@
 <a href="https://youtube.com/watch/AyhPmypHDEw">Watch the video on YouTube!</a>
 </p>
 
-<div id="outline-container-orgb2beb9f" class="outline-2">
-<h2 id="orgb2beb9f">What is Org Roam?</h2>
-<div class="outline-text-2" id="text-orgb2beb9f">
+<div id="outline-container-org76d7712" class="outline-2">
+<h2 id="org76d7712">What is Org Roam?</h2>
+<div class="outline-text-2" id="text-org76d7712">
 <p>
 Org Mode is known to be a great tool not just for writing and personal notes but also TODO lists, project planning, time tracking, and more.  Once you start to become really invested in Org Mode you'll eventually have to come up with a system for managing your Org files so that it's easy to store and find the information you need.
 </p>
@@ -71,9 +71,9 @@ The major advantage of Org Roam over other similar note taking tools is that you
 </div>
 </div>
 
-<div id="outline-container-org8ebf7c4" class="outline-2">
-<h2 id="org8ebf7c4">Prerequisites</h2>
-<div class="outline-text-2" id="text-org8ebf7c4">
+<div id="outline-container-org30f9cf6" class="outline-2">
+<h2 id="org30f9cf6">Prerequisites</h2>
+<div class="outline-text-2" id="text-org30f9cf6">
 <p>
 Org Roam v2 depends on a customized build of the SQLite database tool to operate. Org Roam will take care of compiling this code for you as long as you have a compatible compiler installed!
 </p>
@@ -92,9 +92,9 @@ You may be wondering why Org Roam needs a database; the database enables Org Roa
 </div>
 </div>
 
-<div id="outline-container-orge917075" class="outline-2">
-<h2 id="orge917075">Installation</h2>
-<div class="outline-text-2" id="text-orge917075">
+<div id="outline-container-orgf3c32d9" class="outline-2">
+<h2 id="orgf3c32d9">Installation</h2>
+<div class="outline-text-2" id="text-orgf3c32d9">
 <p>
 Install the <code>org-roam</code> package from MELPA using <code>package.el</code>, <code>straight.el</code> or any other package manager you normally use to install packages.
 </p>
@@ -117,9 +117,9 @@ After loading the package, you can check the variable <code>org-roam--sqlite-ava
 </div>
 </div>
 
-<div id="outline-container-org3589bd2" class="outline-2">
-<h2 id="org3589bd2">Basic configuration</h2>
-<div class="outline-text-2" id="text-org3589bd2">
+<div id="outline-container-org0be695f" class="outline-2">
+<h2 id="org0be695f">Basic configuration</h2>
+<div class="outline-text-2" id="text-org0be695f">
 <p>
 After Org Roam has been installed, the most important thing to configure is the folder where your Org Roam files will be located.
 </p>
@@ -153,9 +153,9 @@ We'll also add some necessary key bindings and a call to <code>org-roam-setup</c
 </div>
 </div>
 
-<div id="outline-container-org77c1c60" class="outline-2">
-<h2 id="org77c1c60">Dealing with migration warnings</h2>
-<div class="outline-text-2" id="text-org77c1c60">
+<div id="outline-container-org0ef80b9" class="outline-2">
+<h2 id="org0ef80b9">Dealing with migration warnings</h2>
+<div class="outline-text-2" id="text-org0ef80b9">
 <p>
 The first time you load the package, you will probably be presented with a message in the <code>*Warnings*</code> buffer about the need to migrate Org Roam v1 files to v2.
 </p>
@@ -191,9 +191,9 @@ Here's how to set the variable in your configuration so that you will no longer 
 </div>
 </div>
 
-<div id="outline-container-org6709194" class="outline-2">
-<h2 id="org6709194">Creating your first node</h2>
-<div class="outline-text-2" id="text-org6709194">
+<div id="outline-container-org1a7878f" class="outline-2">
+<h2 id="org1a7878f">Creating your first node</h2>
+<div class="outline-text-2" id="text-org1a7878f">
 <p>
 Let's create our first node!  We can use the <code>C-c n f</code> binding to invoke <code>org-roam-node-find</code> which brings up a completion session to select or create a node.
 </p>
@@ -216,18 +216,18 @@ Let's follow the same process to create another node called "Emacs Lisp".
 </div>
 </div>
 
-<div id="outline-container-orgf8dbdd4" class="outline-2">
-<h2 id="orgf8dbdd4">They're just .org files!</h2>
-<div class="outline-text-2" id="text-orgf8dbdd4">
+<div id="outline-container-orgd10c642" class="outline-2">
+<h2 id="orgd10c642">They're just .org files!</h2>
+<div class="outline-text-2" id="text-orgd10c642">
 <p>
 These are just plain <code>.org</code> files inside of your notes folder!  You can check them into a Git repository or sync them with any other tool you like.  The database file that Org Roam creates <b>does not</b> need to be synced between machines because Org Roam can recreate it from existing .org files.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org762e16a" class="outline-2">
-<h2 id="org762e16a">Inserting links to other nodes</h2>
-<div class="outline-text-2" id="text-org762e16a">
+<div id="outline-container-org2b731a3" class="outline-2">
+<h2 id="org2b731a3">Inserting links to other nodes</h2>
+<div class="outline-text-2" id="text-org2b731a3">
 <p>
 The real power of Org Roam begins when you start linking your node files together!  However, this works differently than normal Org links.
 </p>
@@ -242,9 +242,9 @@ Let's use this command to insert a link to "Emacs Lisp" in the "Programming Lang
 </div>
 </div>
 
-<div id="outline-container-org8d0e43e" class="outline-2">
-<h2 id="org8d0e43e">Inserting links to nodes that don't exist yet</h2>
-<div class="outline-text-2" id="text-org8d0e43e">
+<div id="outline-container-orgc0c3461" class="outline-2">
+<h2 id="orgc0c3461">Inserting links to nodes that don't exist yet</h2>
+<div class="outline-text-2" id="text-orgc0c3461">
 <p>
 You can also type the name of a node that doesn't exist yet and it will be created!  Once you use <code>C-c C-c</code> to confirm the capture buffer that appears for the new node, a link to that node will be inserted into the buffer you started from.
 </p>
@@ -259,9 +259,9 @@ This makes it much faster to build out your node graph!
 </div>
 </div>
 
-<div id="outline-container-org355a4d6" class="outline-2">
-<h2 id="org355a4d6">Inserting node links using completions</h2>
-<div class="outline-text-2" id="text-org355a4d6">
+<div id="outline-container-org9de544e" class="outline-2">
+<h2 id="org9de544e">Inserting node links using completions</h2>
+<div class="outline-text-2" id="text-org9de544e">
 <p>
 You can also use <code>M-x completion-at-point</code> to complete the names of nodes inside of double-square brackets <code>[[]]</code>.  I've found that this doesn't work in some cases, though!
 </p>
@@ -296,9 +296,9 @@ Here's an updated configuration that makes node completions easier:
 </div>
 </div>
 
-<div id="outline-container-org8c1afaf" class="outline-2">
-<h2 id="org8c1afaf">Creating a heading node</h2>
-<div class="outline-text-2" id="text-org8c1afaf">
+<div id="outline-container-org9a2d195" class="outline-2">
+<h2 id="org9a2d195">Creating a heading node</h2>
+<div class="outline-text-2" id="text-org9a2d195">
 <p>
 One of the new features of Org Roam v2 is the ability to turn a top-level heading inside of a node file into its own unique node.  This can be helpful if some nodes don't really deserve their own files but you still want to link to them!
 </p>
@@ -313,9 +313,9 @@ Let's create a top-level heading node called "Resources" in the "Emacs Lisp" nod
 </div>
 </div>
 
-<div id="outline-container-orga8f240c" class="outline-2">
-<h2 id="orga8f240c">Creating aliases for nodes</h2>
-<div class="outline-text-2" id="text-orga8f240c">
+<div id="outline-container-orgb77a183" class="outline-2">
+<h2 id="orgb77a183">Creating aliases for nodes</h2>
+<div class="outline-text-2" id="text-orgb77a183">
 <p>
 What happens if you have top-level heading nodes in multiple files which have the same name?
 </p>
@@ -342,9 +342,9 @@ If you need to, you can add multiple aliases for a single node.
 </div>
 </div>
 
-<div id="outline-container-org7ebd6b9" class="outline-2">
-<h2 id="org7ebd6b9">Viewing backlinks for the current file</h2>
-<div class="outline-text-2" id="text-org7ebd6b9">
+<div id="outline-container-org35594fb" class="outline-2">
+<h2 id="org35594fb">Viewing backlinks for the current file</h2>
+<div class="outline-text-2" id="text-org35594fb">
 <p>
 Once you've started creating a lot of nodes that are linked together, it might be very helpful to open the backlinks buffer to see which notes are linked to the node you are currently viewing.
 </p>
@@ -363,9 +363,9 @@ Let's create another node called "System Crafters" and add links to both "Progra
 </div>
 </div>
 
-<div id="outline-container-org2adcf3b" class="outline-2">
-<h2 id="org2adcf3b">What's next?</h2>
-<div class="outline-text-2" id="text-org2adcf3b">
+<div id="outline-container-orgb1bf786" class="outline-2">
+<h2 id="orgb1bf786">What's next?</h2>
+<div class="outline-text-2" id="text-orgb1bf786">
 <p>
 We've covered enough about Org Roam in this video so that you can start taking notes in a new way!  It's very satisfying to build up your personal knowledge base.
 </p>
@@ -389,6 +389,9 @@ In the meantime, check out the <a href="https://www.orgroam.com/manual.html">Org
 </p>
 </div>
 </div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.2 (<a href="https://orgmode.org">Org</a> mode 9.4.4)</p>
 </div>
 </body>
 </html>
