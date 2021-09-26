@@ -14,20 +14,8 @@
   (unless (package-installed-p package)
     (package-install package)))
 
-;; Ensure latest org-mode gets installed
-(assq-delete-all 'org package--builtins)
-(when (boundp 'org-package--builtin-versions)
-  (assq-delete-all 'org package--builtin-versions))
-
 ;; Install dependencies
-(ensure-package 'org)
-(ensure-package 'htmlize)
-
-(defun dw/make-heading-anchor-name (headline-text)
-  (thread-last headline-text
-    (downcase)
-    (replace-regexp-in-string " " "-")
-    (replace-regexp-in-string "[^[:alnum:]_-]" "")))
+(package-install 'htmlize)
 
 (require 'org)
 (require 'ox-publish)
@@ -48,6 +36,7 @@
              :publishing-function 'org-html-publish-to-html
              :publishing-directory "./public"
              :with-author nil           ;; Don't include author name
+             :with-creator t            ;; Include Emacs and Org versions in footer
              :section-numbers nil       ;; Don't include section numbers
              :time-stamp-file nil)))    ;; Don't include time stamp in file
 
