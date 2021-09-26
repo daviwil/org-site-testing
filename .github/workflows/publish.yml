@@ -21,7 +21,7 @@ jobs:
       #     # version: 25.3
       #     # version: 26.3
       - name: Install Emacs
-        run: sudo apt install emacs --yes
+        run: sudo apt install emacs-nox --yes
 
       - name: Build the site
         run: ./build.sh
