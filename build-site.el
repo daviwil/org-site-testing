@@ -10,10 +10,6 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(defun ensure-package (package)
-  (unless (package-installed-p package)
-    (package-install package)))
-
 ;; Install dependencies
 (package-install 'htmlize)
 

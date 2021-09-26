@@ -8,6 +8,16 @@ I'm preparing a new series about this for [System Crafters](https://youtube.com/
 - Installing latest Org works with Emacs 25.3 and up
 - Emacs 24.1 can't install packages due to old SSL bug (my assumption)
 
+## Ensuring Dependencies
+
+A simple function that can be included to ensure that a package is installed.  This might not actually be necessary if you can tolerate "package already installed" messages in the script output.
+
+```emacs-lisp
+(defun ensure-package (package)
+  (unless (package-installed-p package)
+    (package-install package)))
+```
+
 ## Ensuring Latest Org
 
 If needed, here's how you can make sure the latest `org-mode` gets installed:
