@@ -15,8 +15,8 @@ jobs:
       - name: Install Emacs
         uses: purcell/setup-emacs@master
         with:
-          # version: 25.3
-          version: 24.5
+          version: 25.3
+          # version: 24.5
           # version: 26.3
           # version: 27.2
 
