@@ -15,12 +15,12 @@
     (package-install package)))
 
 ;; Ensure latest org-mode gets installed
-;; (assq-delete-all 'org package--builtins)
-;; (when (boundp 'org-package--builtin-versions)
-;;   (assq-delete-all 'org package--builtin-versions))
+(assq-delete-all 'org package--builtins)
+(when (boundp 'org-package--builtin-versions)
+  (assq-delete-all 'org package--builtin-versions))
 
 ;; Install dependencies
-;; (ensure-package 'org)
+(ensure-package 'org)
 (ensure-package 'htmlize)
 
 (defun dw/make-heading-anchor-name (headline-text)
